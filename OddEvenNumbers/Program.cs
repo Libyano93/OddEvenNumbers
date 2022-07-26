@@ -31,28 +31,8 @@ namespace OddEvenNumbers
             Console.WriteLine();
         }
 
-        static bool isEven(int number)
-        {
-            if (number % 2 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        static bool isEven(int number) => number % 2 == 0;
 
-        static bool isOdd(int number)
-        {
-            if (number % 2 != 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        static bool isOdd(int number) => !isEven(number);
     }
 }
